@@ -33,7 +33,6 @@ def register():
 @app.route("/login",methods=["POST"])
 def login():
     data=request.get_json()
-    print("DATA: ",data)
     username=data["username"]
     password=data["password"]
     #fetch user
